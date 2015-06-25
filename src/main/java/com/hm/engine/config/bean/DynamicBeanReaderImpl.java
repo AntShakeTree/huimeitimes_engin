@@ -19,7 +19,7 @@ public class DynamicBeanReaderImpl implements DynamicBeanManager,
 			this.applicationContext = (GenericApplicationContext) applicationContext;
 	}
 
-	public GenericApplicationContext getContent() {
+	public GenericApplicationContext getContext() {
 		return this.applicationContext;
 	}
 

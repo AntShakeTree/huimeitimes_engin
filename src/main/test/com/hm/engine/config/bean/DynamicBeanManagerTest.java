@@ -22,7 +22,7 @@ public class DynamicBeanManagerTest {
 	@Test
 	public void testGetContent() throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException, SecurityException {
 		// fail("Not yet implemented");
-		DigraphService digraphService = (DigraphService) dynamicBeanManager.getContent()
+		DigraphService digraphService = (DigraphService) dynamicBeanManager.getContext()
 				.getBean("digraphService");
 		digraphService.nextStep("xxx");
 		System.out.println(digraphService);

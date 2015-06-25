@@ -1,0 +1,24 @@
+1 	" #systolicpressure < 120 and #diatolicpressure< 80 
+"
+2 	"(#systolicpressure>=120 and #systolicpressure<140) or (#diatolicpressure>=80 and #diatolicpressure <90)
+"
+3 	"(#systolicpressure>=140 and #systolicpressure<159) or (#diatolicpressure>=90 and #diatolicpressure <99)
+"
+4 	"(#systolicpressure>=160 and #systolicpressure<179) or (#diatolicpressure>=100 and #diatolicpressure <109)
+"
+5 	#systolicpressure>=180  or #diatolicpressure>=110 
+6 	(#systolicpressure>=160 or #diatolicpressure>=100) and (#hypertensiveEncephalopathy =='true' or #pneumonedema=='true' or #congestiveHeartFailure =='true'   or #acuteCoronarySyndrome=='true'   or #neurologicalSyndrome =='true'  or #aorticDissection =='true' or #papilledema  =='true')
+7 	not(#systolicpressure>=160 or #diatolicpressure>=100) and not(#hypertensiveEncephalopathy =='true' or #pneumonedema=='true' or #congestiveHeartFailure =='true'   or #acuteCoronarySyndrome=='true'   or #neurologicalSyndrome =='true'  or #aorticDissection =='true' or #papilledema  =='true')
+8 	"#age<60 or {'E11' ,'N03','N11','N18'}.contains(#disease)
+"
+9 	"
+not {'E11' ,'N03','N11','N18'}.contains(#disease) and #age>=60"
+22 	#daytimeSomnolence=='true' or #snore=='true'
+23 	#muscleCramp=='true' or #weakness=='true'
+24 	#loseWeight=='true' or #palpitate=='true' or #tachycardia=='true'
+25 	#headache=='true' or #hyperhidrosis=='true' or #palpitate=='true' or #tachycardia=='true' or #neurofibroma=='true'
+26 	#habitus=='true' or #skinCheck=='true'
+27 	#abdominalAusculataiton=='true'
+28 	#femoralArteryPulseDelay=='true' or leftLimbBloodPressureLow =='true'
+29 	#diastoleMurmurs=='true'
+30 	#prostateEnlargement=='true'

@@ -6,7 +6,7 @@
 //
 
 
-package com.engine.parse.omnigraffle.generated;
+package com.hm.engine.parse.omnigraffle.generated;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
